@@ -9,7 +9,8 @@
     "start:build": "npm i && npm run build",
     "dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "local": "webpack --env.NODE_ENV=local",
-    "build": "webpack -p --env.NODE_ENV=production"
+    "build": "webpack -p --env.NODE_ENV=production",
+    "re:install": "rm -rf node_modules package-lock.json yarn.lock && npm run start:dev"
   },
   "keywords": [
     "react"
@@ -20,7 +21,8 @@
     "bootstrap": "4.3.1",
     "prop-types": "15.7.2",
     "react": "16.1.1",
-    "react-dom": "16.1.1"
+    "react-dom": "16.1.1",
+    "reactstrap": "8.0.0"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -32,9 +34,9 @@
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.19.0",
+    "node-sass": "4.11.0",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.19.0",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.3"
