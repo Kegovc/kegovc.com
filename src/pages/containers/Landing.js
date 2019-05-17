@@ -1,20 +1,16 @@
 import React, { Component } from 'react'
 import './Landing.scss'
+import Sky from '../../sky/containers/Sky';
+import {
+  Button
+} from 'reactstrap'
 export class Landing extends Component {
-  code = `var object = {
-  name: <span class= `
   render() {
     
     return (
       <div className="landing">
-        <div 
-            className="firstPlane"
-           
-        >
-            <div className="content">
-             <img src="assets/img/logo.png" />
-            </div>
-        </div>
+      <Button color="danger">Danger!</Button>
+        <Sky/>
         <h2>
             submenu
         </h2>
